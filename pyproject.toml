@@ -1,0 +1,13 @@
+[project]
+name = "mls-search-service-api"
+version = "1.0.0"
+description = "Search, rank and manage MLS real-estate listings over a REST API."
+requires-python = ">=3.11"
+dependencies = ["Flask>=3.1,<4", "gunicorn>=23"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
